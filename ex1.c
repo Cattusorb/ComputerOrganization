@@ -30,24 +30,8 @@ void printBin(long value)
 	// print the output
 	printf("int: %lld, binary: %lld \n", orgValue, binary); 
 
-	/*
-	 * The code below is another way to solve the problem that I did not use
-	 * in my program, this approach is more like the thing we did in class.
-	 * It isn't completely perfect, but the key is the while loop. 
-	int valueMan = value; // Value to manipulate into the binary number
-	char *binary = (char*)malloc(13 * sizeof(char)); 
-	while(valueMan >= 1) 
-	{
-	       if (valueMan % 2 == 0) 
-	       { 
-			valueMan = valueMan / 2; 
-			binary = 0 + binary;  		
-	       } else { 
-		       valueMan = (valueMan - 1) / 2; 
-		       binary = 1 + binary; 
-	       } 
-	} 
-	printf("int: %d, binary: %s\n", value, binary);*/
+	// Another way to preform the same function to print out the binary number is, 
+	// using the bitwise & 
 
 }
 
